@@ -1,25 +1,18 @@
-// boolean
-const amIFat = false;
-console.log(amIFat);
+const days = ["mon","tue","wed","thu","fri","sat"];
 
-// undefined
-let something;
-console.log(something);
+console.log(days[2]);
+days[2] = "asdf";
+console.log(days[2]);
 
-// arrays
-const arrays = [1, 2, 3, null, "every", "day", 43543];
-console.log(arrays);
-console.log(arrays[0]);
+days.push("oen");
+console.log(days);
 
-// Add one more thing to the array
-arrays.push("great");
-console.log(arrays);
-
-// Objects
-const player = {
-    name: "hj",
-    points: 20,
-    good: true
+const person = {
+    name: "Nice",
+    age: 23,
 }
-console.log(player);
-console.log(player.name);
+
+console.log(person);
+person.name = "Good";
+console.log(person);
+
