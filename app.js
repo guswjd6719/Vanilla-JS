@@ -1,18 +1,15 @@
-const days = ["mon","tue","wed","thu","fri","sat"];
+const age = prompt("How old are you?");
 
-console.log(days[2]);
-days[2] = "asdf";
-console.log(days[2]);
+console.log(typeof age);            // 변수의 타입 확인
+console.log(typeof parseInt(age));  
+console.log(parseInt(age));         // String 을 Int 로 변환
+console.log(isNaN(parseInt(age)));  // 변수 값이 Nan 인지 확인
 
-days.push("oen");
-console.log(days);
 
-const person = {
-    name: "Nice",
-    age: 23,
+
+const age2 = parseInt(prompt("How old are you?"));
+if (isNaN(age2)) {
+    alert("please write number");
+} else if (age2 < 18) {
+    alert("You are too young.");
 }
-
-console.log(person);
-person.name = "Good";
-console.log(person);
-
